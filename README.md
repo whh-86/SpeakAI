@@ -4,9 +4,9 @@ SpeakAI is a local Flask app for spoken English coaching. The browser records au
 
 ## Overview
 
-Feature Diagram:
+Function Diagram:
 
-![Feature Diagram](images/overall/1.png)
+![Function Diagram](images/overall/1.png)
 
 Architecture Diagram:
 
