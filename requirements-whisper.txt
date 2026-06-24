@@ -1,0 +1,5 @@
+# Local Whisper environment
+# Install this inside a separate env such as `whisper-exp`
+openai-whisper>=20250625
+torch>=2.2.0
+imageio-ffmpeg>=0.6.0

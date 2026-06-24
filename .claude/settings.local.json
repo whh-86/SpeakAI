@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(conda run -n speakai pip show simple-websocket 2>&1)"
+    ]
+  }
+}
