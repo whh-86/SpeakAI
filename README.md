@@ -2,6 +2,16 @@
 
 SpeakAI is a local Flask app for spoken English coaching. The browser records audio, `/api/chat` sends it through local Whisper or Deepgram transcription, Qwen generates a reply plus structured corrections, and `edge-tts` synthesizes the answer for playback.
 
+## Overview
+
+功能图：
+
+![功能图](images/overall/1.png)
+
+架构图：
+
+![架构图](images/overall/2.png)
+
 ## Project Layout
 
 - `app.py` — Flask app, API routes, session state, error handling
