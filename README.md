@@ -1,6 +1,6 @@
 # SpeakAI Flask Demo
 
-SpeakAI is a local Flask app for spoken English coaching. The browser records audio, `/api/chat` sends it through local Whisper or Deepgram transcription, Gemini generates a reply plus structured corrections, and `edge-tts` synthesizes the answer for playback.
+SpeakAI is a local Flask app for spoken English coaching. The browser records audio, `/api/chat` sends it through local Whisper or Deepgram transcription, Qwen generates a reply plus structured corrections, and `edge-tts` synthesizes the answer for playback.
 
 ## Project Layout
 
@@ -47,15 +47,15 @@ Open `http://127.0.0.1:5000`.
 
 ## Credentials
 
-Use only one Gemini auth path at a time.
+Use only one LLM auth path at a time.
 
-### Recommended: Local Whisper + Gemini Developer API
+### Recommended: Local Whisper + Qwen API
 
 ```env
 ASR_BACKEND=local_whisper
 ASR_MODEL=base.en
 WHISPER_CONDA_ENV=whisper-exp
-GEMINI_API_KEY=your_gemini_key
+QWEN_API_KEY=your_qwen_key
 ```
 
 If your project Python differs from the Whisper environment, the app calls `conda run -n whisper-exp ...` automatically. You can also point directly to a Python executable:
@@ -64,20 +64,20 @@ If your project Python differs from the Whisper environment, the app calls `cond
 WHISPER_PYTHON_EXE=D:\anaconda3\envs\whisper-exp\python.exe
 ```
 
-### Optional: Deepgram streaming ASR + Gemini
+### Optional: Deepgram streaming ASR + Qwen
 
 ```env
 ASR_BACKEND=deepgram
 DEEPGRAM_API_KEY=your_deepgram_key
-GEMINI_API_KEY=your_gemini_key
+QWEN_API_KEY=your_qwen_key
 ```
 
-### Optional fallback: OpenAI ASR + Gemini
+### Optional fallback: OpenAI ASR + Qwen
 
 ```env
 ASR_BACKEND=openai_api
 OPENAI_API_KEY=your_openai_key
-GEMINI_API_KEY=your_gemini_key
+QWEN_API_KEY=your_qwen_key
 ```
 
 ### Vertex AI alternative
