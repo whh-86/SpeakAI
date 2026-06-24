@@ -12,6 +12,12 @@ Architecture Diagram:
 
 ![Architecture Diagram](images/overall/2.png)
 
+## Demo Video
+
+Watch the walkthrough on YouTube:
+
+[![SpeakAI Demo Video](https://img.youtube.com/vi/CQ7G-3y8nJY/0.jpg)](https://youtu.be/CQ7G-3y8nJY)
+
 ## Project Layout
 
 - `app.py` — Flask app, API routes, session state, error handling
