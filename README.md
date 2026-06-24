@@ -4,13 +4,13 @@ SpeakAI is a local Flask app for spoken English coaching. The browser records au
 
 ## Overview
 
-功能图：
+Feature Diagram:
 
-![功能图](images/overall/1.png)
+![Feature Diagram](images/overall/1.png)
 
-架构图：
+Architecture Diagram:
 
-![架构图](images/overall/2.png)
+![Architecture Diagram](images/overall/2.png)
 
 ## Project Layout
 
@@ -242,6 +242,6 @@ pytest tests/test_frontend_e2e.py
 
 - Local Whisper requires `ffmpeg` plus a Whisper-capable Python environment. The `whisper-exp` conda env is recommended.
 - Server-side acoustic analysis (`services/acoustics.py`) also requires `ffmpeg` for volume stability metrics; the app continues without it if ffmpeg is unavailable.
-- The Gemini integration uses the official `google-genai` SDK and supports either `GEMINI_API_KEY` or Vertex AI credentials.
+- The Qwen integration uses the official Qwen SDK and supports `QWEN_API_KEY` or Vertex AI credentials.
 - `edge-tts` writes synthesized files into `static/audio/` and serves them from `/audio/<filename>`.
 - The system prompt can be customised per-request via the Settings page or the `prompt` field in API calls; punctuation-only corrections are suppressed by default since input comes from speech transcription.
